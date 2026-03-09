@@ -1,0 +1,36 @@
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+print("First number:", num1)
+print("Second number:", num2)
+
+message = ''
+Выберете математическую операцию:
+
++ : Addition
+- : Subtraction
+/ : Division
+* : Multiplication
+
+Your choice:
+'''
+
+operation = input(message)
+
+if operation == '+':
+    print('Addition')
+    result = num1 + num2
+elif operation == '-':
+    print('Subtraction')
+    result = num1 - num2
+elif operation == '/':
+    print('Division')
+    result = num1 / num2
+elif operation == '*':
+    print('Multiplication')
+    result = num1 * num2
+else:
+    print('Unknown operation')
+
+
+print("Result:", result)
